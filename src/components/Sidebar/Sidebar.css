@@ -1,0 +1,37 @@
+.sidebar {
+    width: 300px;
+    padding: 1.5rem;
+    background-color: #030504;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    transition: transform 0.4s;
+    transform: translateX(100%);
+    box-shadow: 0 0 1px 2px var(--shadow);
+}
+.sidebar.show-sidebar {
+    transform: translateX(0);
+}
+.sidebar header {
+    margin-bottom: 1.5rem;
+}
+.sidebar header button {
+    font-size: 1.5rem;
+    color: var(--text-red-color);
+}
+.sidebar-links {
+    text-align: center;
+}
+.sidebar-links li {
+    padding: 0.5rem 0;
+}
+.sidebar-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sidebar-links a.active {
+    color: var(--text-red-color);
+}

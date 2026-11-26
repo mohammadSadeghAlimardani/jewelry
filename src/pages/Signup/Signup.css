@@ -1,0 +1,39 @@
+.sign-up {
+    text-align: center;
+    padding-top: 12rem;
+    background-color: var(--main-bg);
+    width: 100%;
+    height: calc(100vh - 12rem);
+}
+.sign-up-center {
+    max-width: 480px;
+    text-align: center;
+}
+.sign-up-center h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.sign-up-center form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.sign-up-center form input {
+    margin: 0.75rem 0;
+    background-color: #3a4a47;
+    font-family: "Roboto-Regular";
+    width: calc(100% - 1.5rem);
+    padding: 0;
+    border: 0;
+    box-shadow: 0 0 1px 1px #3a4a47;
+    padding: 0.75rem;
+}
+.sign-up-center form input:focus {
+    outline: none;
+}
+.sign-up-center form button {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}

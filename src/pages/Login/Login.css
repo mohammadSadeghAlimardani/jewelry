@@ -1,0 +1,34 @@
+.login {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: calc(100vh - 12rem);
+    padding-top: 12rem;
+}
+.login-center {
+    max-width: 480px;
+}
+.login-center form input {
+    margin: 0.75rem 0;
+    background-color: #3a4a47;
+    font-family: "Roboto-Regular";
+    width: calc(100% - 1.5rem);
+    padding: 0;
+    border: 0;
+    box-shadow: 0 0 1px 1px #3a4a47;
+    padding: 0.75rem;
+}
+.login-center form input:focus {
+    outline: none;
+}
+.login-center form button {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.login-center p {
+    color: var(--dark-500);
+    margin-top: 1rem;
+}
+.login-center a {
+    color: white;
+}

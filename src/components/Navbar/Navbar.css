@@ -1,0 +1,70 @@
+.navbar {
+    background-color: var(--main-bg);
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 0 1px 2px var(--shadow);
+}
+
+.navbar-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+    font-family: "Arvo-Bold";
+    justify-self: flex-start;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: -webkit-linear-gradient(white, #848685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 3px var(--dark-100);
+}
+
+.nav-links {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-links a.active {
+    color: var(--text-red-color);
+    text-underline-offset: 0.5rem;
+    text-decoration: underline 2px var(--text-red-color);
+}
+
+.user-btns {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.user-btns .link {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.show-sidebar-btn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-center {
+        grid-template-columns: 1fr 1fr;
+    }
+    .user-btns .show-sidebar-btn {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+}

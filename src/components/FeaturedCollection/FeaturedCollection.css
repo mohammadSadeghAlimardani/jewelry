@@ -1,0 +1,7 @@
+.featured-collection {
+    padding: 4rem 0;
+    background-color: var(--main-bg);
+}
+.featured-collection .title {
+    margin-bottom: 2rem;
+}

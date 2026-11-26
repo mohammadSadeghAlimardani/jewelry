@@ -1,0 +1,21 @@
+.why-us {
+    padding: 4rem 0;
+    background-color: #091c18;
+}
+.why-us article {
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 0 1px 2px #3f4b47;
+    color: white;
+}
+.why-us article svg {
+    font-size: 2.5rem;
+}
+.why-us article h4 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.why-us article p {
+    font-size: 0.87rem;
+    line-height: 1.4;
+}
