@@ -1,3 +1,7 @@
 .cart {
-    padding-top: 12rem;
+    padding-top: 6rem;
+    background-color: var(--main-bg);
+    color: white;
+    width: 100%;
+    min-height: calc(100vh - 6rem);
 }

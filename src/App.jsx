@@ -11,6 +11,8 @@ import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Cart from "./pages/Cart/Cart";
 
+import { loader as jewelLoader } from "./pages/Jewel/Jewel";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -41,6 +43,7 @@ const router = createBrowserRouter([
         path: "/jewel/:id",
         element: <Jewel />,
         errorElement: <GlobalError />,
+        loader: jewelLoader,
     },
     {
         path: "/user",
@@ -64,6 +67,10 @@ const App = () => {
     const [isShowSidebar, setIsShowSidebar] = useState(false);
     const [isDisplayModalSearchForm, setIsDisplayModalSearchForm] =
         useState(false);
+
+    useEffect(() => {
+        localStorage.setItem("user", JSON.stringify(user));
+    }, [user]);
 
     return (
         <AppContext.Provider

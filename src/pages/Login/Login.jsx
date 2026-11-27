@@ -27,10 +27,6 @@ const Login = () => {
                     toast.error("email or password is not correct");
                 } else {
                     setUser(response.data[0]);
-                    localStorage.setItem(
-                        "user",
-                        JSON.stringify(response.data[0]),
-                    );
                     toast.success("you logined successfully");
                     navigate("/");
                 }

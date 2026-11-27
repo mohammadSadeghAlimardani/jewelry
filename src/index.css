@@ -547,7 +547,13 @@ body {
     font-family: "Roboto-Regular";
 }
 .btn.btn-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     text-decoration: none;
     background-color: var(--text-red-color);
     color: white;
+}
+.btn.btn-main svg {
+    font-size: 1.25rem;
 }

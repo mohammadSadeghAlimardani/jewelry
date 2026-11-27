@@ -12,9 +12,13 @@ const Cart = () => {
             <Navbar />
             <div className="cart">
                 <section className="section-center cart-center">
-                    {user.cart.map((item) => {
-                        return <CartItem {...item} key={item.id} />;
-                    })}
+                    {!user?.cart || user?.cart?.length === 0 ? (
+                        <p>Your cart is empty</p>
+                    ) : (
+                        user?.cart?.map((item) => {
+                            return <CartItem {...item} key={item.id} />;
+                        })
+                    )}
                 </section>
             </div>
         </>

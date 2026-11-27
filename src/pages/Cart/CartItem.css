@@ -1,0 +1,15 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+}
+.cart-item img {
+    width: 8rem;
+    height: auto;
+}
+.cart-item h4 {
+    margin: 0.5rem 0;
+}
+.cart-item .delete-cart-item {
+    font-size: 1.25rem;
+    color: var(--text-red-color);
+}

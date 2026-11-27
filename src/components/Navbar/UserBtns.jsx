@@ -35,7 +35,7 @@ const UserBtns = () => {
             )}
             <NavLink to="/cart" className="link cart-btn">
                 <IoBagHandleOutline />
-                {user ? <span>{user.cart.length}</span> : ""}
+                {user ? <span>{user?.cart?.length}</span> : ""}
             </NavLink>
             <button
                 className="link show-sidebar-btn"

@@ -1,3 +1,26 @@
 .jewel {
-    padding-top: 12rem;
+    width: 100%;
+    height: calc(100vh - 6rem);
+    padding-top: 6rem;
+    color: white;
+    background-color: var(--main-bg);
+}
+.jewel img {
+    width: 20rem;
+    height: auto;
+    object-fit: cover;
+}
+.jewel h2 {
+    margin-bottom: 1rem;
+}
+.jewel p {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.jewel h3 {
+    margin-bottom: 1rem;
+}
+.jewel h4 {
+    margin-bottom: 1rem;
+    color: var(--text-red-color);
 }
