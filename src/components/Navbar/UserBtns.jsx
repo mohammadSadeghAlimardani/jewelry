@@ -33,9 +33,10 @@ const UserBtns = () => {
                     login
                 </NavLink>
             )}
-            <button className="link cart-btn">
+            <NavLink to="/cart" className="link cart-btn">
                 <IoBagHandleOutline />
-            </button>
+                {user ? <span>{user.cart.length}</span> : ""}
+            </NavLink>
             <button
                 className="link show-sidebar-btn"
                 onClick={(event) => setIsShowSidebar(true)}

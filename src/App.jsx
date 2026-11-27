@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -9,6 +9,7 @@ import User from "./pages/User/User";
 import Search from "./pages/Search/Search";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
+import Cart from "./pages/Cart/Cart";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <Login />,
+        errorElement: <GlobalError />,
+    },
+    {
+        path: "/cart",
+        element: <Cart />,
         errorElement: <GlobalError />,
     },
     {
@@ -51,7 +57,9 @@ const router = createBrowserRouter([
 export const AppContext = createContext();
 
 const App = () => {
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState(
+        JSON.parse(localStorage.getItem("user")) || null,
+    );
     const [searchTerm, setSearchTerm] = useState("");
     const [isShowSidebar, setIsShowSidebar] = useState(false);
     const [isDisplayModalSearchForm, setIsDisplayModalSearchForm] =

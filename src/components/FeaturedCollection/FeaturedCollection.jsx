@@ -5,7 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import FeaturedCard from "./FeaturedCard";
 
-const url = "https://api.m0ckly.site/m/6a97ad5307cac036/jewelleries";
+const url = "https://api.m0ckly.site/m/6a97ad5307cac036/jewelry-products";
 
 const FeaturedCollection = () => {
     const [featuredItems, setFeaturedItems] = useState([]);

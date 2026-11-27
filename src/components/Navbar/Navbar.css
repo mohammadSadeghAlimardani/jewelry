@@ -52,6 +52,23 @@
     color: white;
     font-size: 1.5rem;
 }
+.user-btns .cart-btn {
+    position: relative;
+}
+.user-btns .cart-btn span {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--text-red-color);
+    color: white;
+    font-size: 0.87rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .show-sidebar-btn {
     display: none;
